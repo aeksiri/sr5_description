@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="sr5">
+    <link name="base_link">
+        
+<inertial>
+            <origin xyz="1.908E-07 -1.6081E-07 0.015566" rpy="0 0 0" />
+            <mass value="1.8568" />
+            <inertia ixx="0.0039529" ixy="6.2707E-10" ixz="-1.6174E-10" iyy="0.0039529" iyz="1.6728E-09" izz="0.0073328" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.89804 0.91765 0.92941 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link1">
+        
+<inertial>
+            <origin xyz="-9.4132E-08 0.0099951 0.082501" rpy="0 0 0" />
+            <mass value="1.3178" />
+            <inertia ixx="0.0027395" ixy="-3.6157E-07" ixz="1.5761E-08" iyy="0.002752" iyz="-0.00035356" izz="0.0018915" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0.03" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="link1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.141" upper="3.141" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="link2">
+        
+<inertial>
+            <origin xyz="-9.7389E-05 0.057355 0.1895" rpy="0 0 0" />
+            <mass value="2.6176" />
+            <inertia ixx="0.085085" ixy="-1.8079E-05" ixz="6.6174E-06" iyy="0.082321" iyz="0.00079301" izz="0.0064085" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint2" type="revolute">
+        <origin xyz="0 0.045 0.1" rpy="0 0 0" />
+        <parent link="link1" />
+        <child link="link2" />
+        <axis xyz="0 1 0" />
+        <limit lower="-2.141" upper="2.141" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="link3">
+        
+<inertial>
+            <origin xyz="-1.5278E-06 -0.034935 0.025472" rpy="0 0 0" />
+            <mass value="1.3019" />
+            <inertia ixx="0.0024627" ixy="-2.2347E-06" ixz="-8.901E-08" iyy="0.002474" iyz="0.00045457" izz="0.0019237" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint3" type="revolute">
+        <origin xyz="0 0 0.39975" rpy="0 0 0" />
+        <parent link="link2" />
+        <child link="link3" />
+        <axis xyz="0 1 0" />
+        <limit lower="-2.8" upper="2.8" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="link4">
+        
+<inertial>
+            <origin xyz="0.00015562 0.061823 0.20524" rpy="0 0 0" />
+            <mass value="0.67706" />
+            <inertia ixx="0.010186" ixy="-1.0896E-05" ixz="-8.2132E-06" iyy="0.0090583" iyz="-0.0026376" izz="0.0015366" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint4" type="revolute">
+        <origin xyz="0 -0.045 0.098" rpy="0 0 0" />
+        <parent link="link3" />
+        <child link="link4" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.141" upper="3.141" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="link5">
+        
+<inertial>
+            <origin xyz="-7.3617E-06 -0.027586 0.0059698" rpy="0 0 0" />
+            <mass value="0.5365" />
+            <inertia ixx="0.00070321" ixy="-1.738E-06" ixz="-2.0576E-07" iyy="0.00070294" iyz="3.7561E-05" izz="0.00034865" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint5" type="revolute">
+        <origin xyz="0 0.032068 0.30175" rpy="0 0 0" />
+        <parent link="link4" />
+        <child link="link5" />
+        <axis xyz="0 1 0" />
+        <limit lower="-3.141" upper="3.141" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="link6">
+        
+<inertial>
+            <origin xyz="-5.8295E-16 -3.2103E-17 -0.010923" rpy="0 0 0" />
+            <mass value="0.038745" />
+            <inertia ixx="8.7657E-06" ixy="-3.6882E-22" ixz="-2.6688E-19" iyy="9.1518E-06" iyz="-1.936E-20" izz="1.3442E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/link6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint6" type="revolute">
+        <origin xyz="0 -0.03207 0.0855" rpy="0 0 0" />
+        <parent link="link5" />
+        <child link="link6" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.141" upper="3.141" effort="1000" velocity="6.282" />
+    </joint>
+    <link name="hand_link">
+        
+<inertial>
+            <origin xyz="6.2564E-06 3.3394E-05 0.031908" rpy="0 0 0" />
+            <mass value="0.060257" />
+            <inertia ixx="2.8147E-05" ixy="-3.2686E-08" ixz="4.6046E-09" iyy="2.327E-05" iyz="-2.5298E-08" izz="1.3081E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/hand_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/hand_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="hand_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="link6" />
+        <child link="hand_link" />
+        <axis xyz="0 0 0" />
+    </joint>
+    <link name="right_finger_link">
+        
+<inertial>
+            <origin xyz="-2.381E-09 0.0051254 0.031222" rpy="0 0 0" />
+            <mass value="0.012212" />
+            <inertia ixx="4.4569E-06" ixy="-1.7335E-13" ixz="4.1481E-13" iyy="4.3168E-06" iyz="6.2127E-08" izz="5.7393E-07" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/right_finger_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/right_finger_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="right_finger_joint" type="prismatic">
+        <origin xyz="0 0.01069 0.0577" rpy="0 0 0" />
+        <parent link="hand_link" />
+        <child link="right_finger_link" />
+        <axis xyz="0 1 0" />
+        <limit lower="0" upper="0.01" effort="1000" velocity="1" />
+    </joint>
+    <link name="left_finger_link">
+        
+<inertial>
+            <origin xyz="2.381E-09 -0.0051254 0.031222" rpy="0 0 0" />
+            <mass value="0.012212" />
+            <inertia ixx="4.4569E-06" ixy="-1.7335E-13" ixz="-4.1481E-13" iyy="4.3168E-06" iyz="-6.2127E-08" izz="5.7393E-07" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/left_finger_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://sr5_description/meshes/left_finger_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="left_finger_joint" type="prismatic">
+        <origin xyz="0 -0.01069 0.0577" rpy="0 0 0" />
+        <parent link="hand_link" />
+        <child link="left_finger_link" />
+        <axis xyz="0 1 0" />
+        <limit lower="-0.01" upper="0" effort="1000" velocity="1" />
+    </joint>
+    
+<transmission name="trans_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_right_finger_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="right_finger_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="right_finger_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_left_finger_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="left_finger_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="left_finger_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+            <legacyModeNS>true</legacyModeNS>
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        </plugin>
+    </gazebo>
+    <gazebo reference="base_link">
+        <static>true</static>
+    </gazebo>
+    <gazebo reference="base_link">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link1">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="link2">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link3">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="link4">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link5">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="link6">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="left_finger_link">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="right_finger_link">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+        <selfCollide>true</selfCollide>
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <transmission name="trans_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_right_finger_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="right_finger_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="right_finger_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_left_finger_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="left_finger_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="left_finger_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
