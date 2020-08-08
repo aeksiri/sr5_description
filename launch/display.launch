@@ -3,7 +3,7 @@
     name="model" />
   <arg
     name="gui"
-    default="True" />
+    default="False" />
   <param
     name="robot_description"
     textfile="$(find sr5_description)/urdf/sr5_description.urdf" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find sr5_description)/rviz/display.rviz" />
+    args="-d $(find sr5_description)/urdf.rviz" />
 </launch>

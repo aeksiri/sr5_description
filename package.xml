@@ -2,9 +2,9 @@
   <name>sr5_description</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for sr5</p>
+    <p>URDF Description package for sr5_description</p>
     <p>This package contains configuration data, 3D models and launch files
-for sr5 robot</p>
+for sr5_description robot</p>
   </description>
   <author>Akkharaphong EKSIRI</author>
   <maintainer email="akkharaphong.e@bu.ac.th" />
