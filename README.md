@@ -1,5 +1,5 @@
 # sr5_description
-DIY ROS-Based 7-Axis Robot (P-RRR-RRR)
+DIY ROS-Based 6-Axis Robot (RRRRRR)
 
 Code name : #SR5\
 Payload : 5 kg\
